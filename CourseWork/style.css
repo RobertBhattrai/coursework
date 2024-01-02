@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    font-family: 'Poppins', sans-serif;
+  
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+html{
+    font-size: 62.5%;
+  
+    /* Overflow is the property that controls waht happens to the content that is too big to fit into an area */
+    /* Overflow hidden garda, the overflow is clipped, and the rest of the content will be invisible */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  section{
+    /* min-height propert defines the minimum height of an element */
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+  
+  }
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  
+  }
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+  
+    /* Cursoe property specifies the mouse cursor to be displayed when pointing over an element */
+    cursor: default;
+  }
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem ;
+    transition: .3s;
+  }
+  
+.navbar a:hover, .navbar a.active{
+      color: var(--main-color);
+  }
+
+.home-header h1{
+  font-size: 2.5rem;
+}  
+
+  /* image slider */
+  .slider{
+    width: 100%;
+    height: 600px;
+    box-shadow: 0px 0px 3px grey;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.slide img{
+    height: 500px;
+    width: 2000px;
+}
+.slide{
+    position: relative;
+    transition: 0.7s ease-in-out;
+}
+.nav{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(62, 56, 56, 0.518);
+    color: #fff;
+    border: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: 0.6s;
+}
+.nav button:hover{
+    color: #fff;
+    text-shadow: 0 0 2rem #0099ff;
+    background-color: #0099ff27;
+}
+  /* image slider */
+.services{
+    background-color: var(--second-bg-color);
+  }
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+  }
+.contact{
+  background-color: var(--second-bg-color);
+}
+.home p{
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: large;
+  font-family: cursive;
+}
+
+
+
+  /* contact */
+.heading{
+  text-align: center;
+  font-size: 4.5rem;
+  text-shadow: 0 0 1rem var(--main-color);
+}
+span{
+  color: var(--main-color);
+}
+.contact h2{
+  margin-bottom: 3rem;
+}
+
+.contact form{
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.contact form .input-box input, .contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: .8rem;
+  margin: .7rem 0;
+
+}
+
+.contact form .input-box input{
+  width: 49%;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.btn {
+  display: flex;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.btn:hover{
+  box-shadow: none;
+  transform: translateY(-1px);
+  transform: scale(0.98);
+}
