@@ -1,0 +1,332 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css link gareko-->
+    <link rel="stylesheet" href="styles.css">
+   
+    <!-- Title declare here -->
+    <title>My_Portfolio</title>
+
+    <!--Box icon--> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Yo chai hamile arko box icon website sagga link garauna lai link tag use gareko -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+<body>
+  <!-- Hamile sabei Tag ma class mention gareko xu, css ma style dinu sajilo hunxa vanera -->
+  <!-- Proper formate ma banauna ko lagi hamile <header> <main> ani <footer> ko use garxum -->
+<header class="header">
+   <a href="#" class="logo">PrintNP</a>
+  
+  <!-- nav tag le hamro webiste more appealing banauxa -->
+
+
+  <nav class="navbar">
+     <!-- Home ta hamro default page ho so yeslai hovering effect dirakhnu parena so CSS ma sajilei style dina hamile yeslai afnei class deko -->
+     <a href="#home">Home</a>
+     <a href="#about">About</a>
+     <a href="#services">Services</a>
+     <a href="#portfolio">Portfolio</a>
+     <a href="#contact">Contact</a>
+     <!-- <a> tag vitra href ma '#' le same page ma vako tara xutei section ma vako lai link garauxa-->
+ </nav>
+
+
+  <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#home">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list" onclick="setActive()">
+                <a href="#about" >
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#services" onclick="setActive()">
+                    <span class="icon"><ion-icon name="rocket-outline"></ion-icon></span>
+                    <span class="text">Service</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#portfolio">
+                    <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                    <span class="text">Portfolio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#contact">
+                    <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                    <span class="text">Contact</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div> 
+
+
+      <!-- for nav bar -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </header>
+   
+
+ <main>
+ <!-- Home Selection Design -->
+
+ <!-- Sabei Home ko Context lai eutei section ma parnu lai setion tag use gareko -->
+ <section class="home" id="home">
+
+  <!-- Yo Section ma 4ota div use garim -->
+  <!-- 1st div for Evrytext in Context 2nd for Linking to your social media
+  3rd for Download Cv button 4th contains image-->
+  <!-- We declear div for all seperate things so we can design them individually -->
+   <div class="home-content" >
+    <h3>Hello, It's Me</h3>
+    <br><br><br><br><br><br><br>
+    <h3>And I'm a <br><span class="multiple-text"></span></h3>
+    <p>You can also refer me as Robert Bhattarai. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem voluptatibus. Ea nisi iusto dolores magnam voluptatum id eum ratione alias, amet odit qui sed error maxime molestiae accusamus quia. </p>
+
+<!-- social media ko sabei icon lai same desgin garnu hamile euta div ko vitra lekhim -->
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/robert.bhattarai.18/" target="_blank">
+         <i class='bx bxl-facebook-circle'></i>
+      </a>
+
+      <a href="" target="_blank">
+        <i class='bx bxl-instagram' ></i>
+      </a>
+
+      <a href="https://www.youtube.com/@MoraLessBoi/" target="_blank">
+        <i class='bx bxl-youtube' ></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/robert-bhattarai-0b20b8278/" target="_blank">
+        <i class='bx bxl-linkedin' ></i>
+      </a>
+    </div>
+
+    <!-- "Download CV" vanne text lai farak parale design garnu ko lagi hamile <a> tag vitra class declear gareko -->
+    <a href="" class="btn">Download CV</a>
+   </div>
+
+  <!-- similarly img lai ni arko div ma lekheko -->
+   <div class="home-img">
+     <img src="mainimg.png" class="merophoto">
+   </div>
+</section>
+<!-- first section completed -->
+
+
+
+ <!-- About Section Design -->
+ <section class="about" id="about">
+  <div class="about-img">
+    <img src="aboutImage.png" alt="">
+  </div>
+
+  <div class="about-content">
+    <div class="leftani">
+    <h2 class="heading">About <span id="multiple-text">Me</span></h2>
+  </div>
+    <h3>Frontend Developer!</h3>
+    <h2 class="heading"> I <span id="multiple-text2"></span> </h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, possimus odit, pariatur inventore natus eveniet quidem fuga quasi rerum voluptate distinctio saepe harum et, ipsum molestias deleniti facilis repudiandae recusandae.</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+</section>
+
+<!-- services Section Design -->
+<section class="services" id="services">
+  <h2 class="heading">Our <span>Services</span></h2> 
+
+  <!-- Services ma hamile 3ota Box ma content lekheko xau -->
+  <!-- ani yo content lai euta parent cell ma lekhnu parxa in this case hamile services-container div ma lekheko xau -->
+  <div class="services-container">
+<!-- services-container (parent box) ma 3ota box xa(child box) -->
+    <div class="services-box">
+    <i class='bx bx-code-alt'></i>
+    <h3>Web Development</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis esse quam recusandae quod numquam error ducimus ut velit quas.</p>
+    <a href="" class="btn">Read More</a>
+  </div>
+  
+
+    <div class="services-box">
+    <i class='bx bxs-paint' ></i>
+    <h3>Graphic Designer</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis esse quam recusandae quod numquam error ducimus ut velit quas.</p>
+    <a href="" class="btn">Read More</a>
+
+
+  </div>
+    <div class="services-box">
+    <i class='bx bx-book'></i>
+    <h3>Programming Tutor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis esse quam recusandae quod numquam error ducimus ut velit quas.</p>
+    <a href="" class="btn">Read More</a>
+    </div>
+
+
+  </div>
+</section>
+<!-- sakiyo 2nd section -->
+
+<!-- Portfolio design -->
+<section class="portfolio" id="portfolio">
+  <h2 class="heading">Latest <span>Project</span></h2>
+
+  <!-- service container ko same logic lagaudei hamile yo section ma 6ota diffent child box create garim -->
+  <div class="portfolio-container">
+
+    <div class="portfolio-box">
+      <img src="portfolio1.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi quam deserunt, corrupti quas eius nihil? Consequatur aspernatur quasi sed!</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>   
+    </div>
+
+    <div class="portfolio-box">
+      <img src="portfolio2.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi quam deserunt, corrupti quas eius nihil? Consequatur aspernatur quasi sed!</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>   
+    </div>
+
+    <div class="portfolio-box">
+      <img src="portfolio3.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi quam deserunt, corrupti quas eius nihil? Consequatur aspernatur quasi sed!</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>   
+    </div>
+
+
+    <div class="portfolio-box">
+      <img src="portfolio4.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi quam deserunt, corrupti quas eius nihil? Consequatur aspernatur quasi sed!</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>   
+    </div>
+
+    <div class="portfolio-box">
+      <img src="portfolio5.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi quam deserunt, corrupti quas eius nihil? Consequatur aspernatur quasi sed!</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>   
+    </div>
+
+    <div class="portfolio-box">
+      <img src="portfolio6.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi quam deserunt, corrupti quas eius nihil? Consequatur aspernatur quasi sed!</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>   
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section Design -->
+<section class="contact" id="contact">
+
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <!-- ntg special same as class 12 ma sikeko jastei form tag -->
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full name">
+      <input type="text" placeholder="Email Address">
+    </div>
+
+    <div class="input-box">
+      <input type="number" placeholder="Mobile Number">
+      <input type="text" placeholder="Email Subject">
+    </div>
+
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+
+</section>
+
+
+</main>
+
+<!-- footer design -->
+<footer class="footer">
+  <div class="footer-text">
+  <pre class="footerp">Made by SAFAL BHATTARAI  ||  ALL Rights Reserved</pre> </div>
+  
+
+<div class="footer-iconTop">
+  <a href="#home">
+    <i class='bx bx-up-arrow-alt'></i>
+  </a>
+</div>
+
+</footer>
+
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- hamro java script -->
+<script src="script.js"></script>
+
+
+<!-- Typed js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+const typed= new Typed('.multiple-text', {
+  strings: ['Frontend Developer', 'Student', 'Programmer'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 100,
+  loop: true
+});
+</script>
+
+<script>
+  const typed1= new Typed('#multiple-text2', {
+    strings: ['Code', 'Eat', 'Sleep'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 100,
+    loop: true
+  });
+
+  const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach(item => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+
+        list.forEach(item =>
+        item.addEventListener('click', activeLink));
+
+  </script>
+</body>
+
+
+</html>

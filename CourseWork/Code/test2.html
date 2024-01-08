@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      position: relative;
+      max-width: 600px; /* Adjust the maximum width as needed */
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .button-left,
+    .button-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button-left {
+      left: 0;
+    }
+
+    .button-right {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="your-image.jpg" alt="Your Image">
+  <button class="button-left">Left Button</button>
+  <button class="button-right">Right Button</button>
+</div>
+
+</body>
+</html>
