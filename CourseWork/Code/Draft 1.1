@@ -253,7 +253,8 @@ html code:
 
 
 
-
+#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*##*#*#*#*#*#*#*#*#*###*#*#*#*#*#**#*##**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*##**#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 
 CSS code:
 * {
@@ -707,6 +708,8 @@ select {
 }
 
 
+#*#*#*#**#*##*#*#**#*#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+#*#*#*#**#*##*#*#**#*#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 
 
 Javascript code:
@@ -790,4 +793,266 @@ function popup() {
   alert("Thank you for contacting us.\n" + CustomerInfo);
     }
 }
+
+
+************************************************************************************************************************************************
+*************************************************************************************************************************************************
+*************************************************************************************************************************************************
+
+
+edit: added blog page
+blog page:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+.dark-theme {
+  --bg-color: #ffdddd;
+  --second-bg-color: #cacaca;
+  --text-color: #000000;
+  --main-color: rgb(0, 238, 255);
+}
+
+/* Youtube scroll*/
+.scroll-watcher{
+  height: 3px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1000;
+  background-color:var(--main-color);
+  width: 100%;
+  transform-origin: left;
+  scale: 0 1;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
+}
+@keyframes scroll-watcher {
+  to { scale: 1 1;}
+}
+
+
+html {
+  font-size: 62.5%;
+  /* Overflow is the property that controls waht happens to the content that is too big to fit into an area */
+  /* Overflow hidden garda, the overflow is clipped, and the rest of the content will be invisible */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+section {
+  /* min-height propert defines the minimum height of an element */
+  min-height: 100vh;
+  padding: 13rem 9% 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+}
+.logo-content .logo img {
+  width: 25rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  /* Cursoe property specifies the mouse cursor to be displayed when pointing over an element */
+  cursor: default;
+}
+
+#icon {
+  width: 8rem;
+  height: 3.2rem;
+  object-fit: cover;
+  margin-left: 3rem;
+}
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+  </style>
+  <body>
+    <header class="header">
+        <!-- logo -->
+        <div class="logo-content">
+          <a href="test2.html" class="logo">
+            <img id="logo" src="Images/dark-logo.png" alt="" />
+          </a>
+          <img id="icon" src="Images/moon.png" alt="" />
+        </div>
+        
+      </header>
+    <section class="about" id="about">
+      <div class="blog-contents">
+        <h1>About Technology</h1>
+        <img
+          class="blog-content-img"
+          src="/Code/Images/15b6e05b694e195d9f4a06c6f8c0a625.jpg"
+        />
+        <p>
+          In the 21st century, technology has become an omnipresent force,
+          weaving itself into the fabric of our daily lives and reshaping the
+          way we live, work, and interact. This essay explores the multifaceted
+          impact of technology on society, delving into both its positive
+          contributions and the challenges it presents.
+        </p>
+      </div>
+    </section>
+
+    <section class="positive" id="positive">
+      <div class="blog-contents">
+        <h1>Positive Impact Of Technology</h1>
+        <img
+          class="blog-content-img"
+          src="/Code/Images/Technology-and-Education.jpg"
+        />
+        <h2>Enhanced Connectivity and Communication:</h2>
+        <p>
+          One of the most profound ways in which technology has altered our
+          lives is through the revolutionized landscape of communication. Gone
+          are the days of geographical constraints, as digital platforms, video
+          calls, and social media have ushered in an era of instant and global
+          connectivity. Families separated by oceans, friends residing in
+          different continents - all are brought closer together through the
+          seamless exchange of messages and virtual interactions.
+        </p>
+        <h2>Access to Information and Education:</h2>
+        <p>
+          The internet, akin to a vast digital library, has democratized access
+          to information. Online resources and educational platforms have
+          democratized learning, allowing individuals to acquire knowledge and
+          skills irrespective of their physical location. This has not only
+          expanded educational opportunities but has also fueled a culture of
+          continuous learning, empowering individuals to stay relevant in an
+          ever-evolving world.
+        </p>
+        <h2>Efficiency and Productivity in Workplaces:</h2>
+        <p>
+          In the realm of business and industry, technology has ushered in an
+          era of unprecedented efficiency. Automation, data analytics, and
+          digital communication tools have streamlined processes, optimizing
+          workflows and enhancing overall productivity. This has not only
+          improved the bottom line for businesses but has also created an
+          environment where innovation is spurred by the availability of
+          powerful technological tools.
+        </p>
+        <h2>Advancements in Healthcare:</h2>
+        <p>
+          The marriage of technology and healthcare has resulted in
+          groundbreaking advancements. From telemedicine bringing medical
+          consultations to the comfort of one's home to digital health records
+          streamlining patient care, technology has played a pivotal role in
+          improving healthcare accessibility and outcomes. Innovations like
+          wearable health devices and medical imaging technologies have
+          furthered diagnostic capabilities, saving lives and improving the
+          quality of care.
+        </p>
+        <h2>Catalyst for Creativity and Innovation:</h2>
+        <p>
+          Technology has emerged as a catalyst for human creativity and
+          innovation. Virtual reality, artificial intelligence, and other
+          cutting-edge technologies are not just tools but gateways to new
+          realms of artistic expression and problem-solving. From immersive
+          virtual experiences to machine learning-driven solutions, technology
+          has pushed the boundaries of human ingenuity.
+        </p>
+      </div>
+    </section>
+
+    <section class="negative" id="negative">
+      <div class="blog-contents">
+        <h1>Negative Impact of technology</h1>
+        <img
+          class="blog-content-img"
+          src="/Code/Images/Advantages-and-Disadvantages-of-Technology.png"
+        />
+        <h2>Social Implications:</h2>
+        <p>
+          Despite the connectivity technology provides, concerns have arisen
+          about its impact on social dynamics. The rise of social media, while
+          fostering online communities, has also been associated with social
+          isolation. The paradox of being more connected digitally yet feeling
+          more isolated in reality raises questions about the depth and
+          authenticity of modern interpersonal relationships.
+        </p>
+        <h2>Job Displacement and Skills Gap:</h2>
+        <p>
+          The advent of automation and artificial intelligence has introduced a
+          new dimension to the employment landscape. While these technologies
+          create new opportunities, they also pose challenges such as job
+          displacement and the need for constant upskilling. The skills gap
+          between traditional and emerging industries becomes a hurdle for
+          individuals seeking to navigate this evolving job market.
+        </p>
+        <h2>Privacy and Ethical Concerns:</h2>
+        <p>
+          The ubiquity of technology has given rise to significant privacy
+          concerns. Data breaches, surveillance practices, and the ethical
+          considerations surrounding the collection and use of personal
+          information have become pressing issues. Balancing the benefits of
+          data-driven technologies with the protection of individual privacy
+          becomes a delicate task.
+        </p>
+        <h2>Digital Addiction and Mental Health:</h2>
+        <p>
+          The convenience and connectivity provided by technology also come with
+          a flip side. Digital addiction, characterized by excessive screen
+          time, social media engagement, and online gaming, has been linked to
+          adverse effects on mental health. The constant barrage of information
+          and the pressure to stay digitally connected can contribute to stress,
+          anxiety, and a sense of being overwhelmed
+        </p>
+      </div>
+    </section>
+
+    <section class="impact" id="impact"></section>
+  </body>
+</html>
+
 
